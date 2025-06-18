@@ -33,33 +33,38 @@ int Addition(double x, double y) {
 }
 
 int main(){
-    cout << "Operator(Type of Calculation): ";
-    char TypeOfCalculation = ' ';
-    cin >> TypeOfCalculation;
-    cout << "1st Number: ";
-    double x;
-    double y;
-    cin >> x;
-    cout << "2nd Number: ";
-    cin >> y;
-    double calculation = x + y;
 
-    switch(TypeOfCalculation){
-        case '*':
-            cout << "Calculation = " << Multiply(x, y);
-            break;
-        case '/':
-            cout << "Calculation = " << Divide(x, y);
-            break;
-        case '-':
-            cout << "Calculation = " << Subtract(x, y);
-            break;
-        case '+':
-            cout << "Calculation = " << Addition(x, y);
-            break;
-        default:
-            cout << "Invalid";
-            break;
+    //int i = 0;
+
+    while(1 < 100){
+        cout << "Operator(Type of Calculation): ";
+        char TypeOfCalculation = ' ';
+        cin >> TypeOfCalculation;
+        cout << "1st Number: ";
+        double x;
+        double y;
+        cin >> x;
+        cout << "2nd Number: ";
+        cin >> y;
+        double calculation = x + y;
+
+        switch(TypeOfCalculation){
+            case '*':
+                cout << "Calculation = " << Multiply(x, y) << endl;
+                break;
+            case '/':
+                cout << "Calculation = " << Divide(x, y) << endl;
+                break;
+            case '-':
+                cout << "Calculation = " << Subtract(x, y) << endl;
+                break;
+            case '+':
+                cout << "Calculation = " << Addition(x, y) << endl;
+                break;
+            default:
+                cout << "Invalid!" << endl;
+                break;
+        }
     }
 
     return 0;
