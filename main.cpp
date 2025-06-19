@@ -63,6 +63,7 @@ int main(){
                 break;
             default:
                 cout << "Invalid!" << endl;
+                ContinueCalculation = false;
                 break;
         }
     }
