@@ -34,9 +34,9 @@ int Addition(double x, double y) {
 
 int main(){
 
-    //int i = 0;
+    bool ContinueCalculation = true;
 
-    while(1 < 100){
+    while(ContinueCalculation){
         cout << "Operator(Type of Calculation): ";
         char TypeOfCalculation = ' ';
         cin >> TypeOfCalculation;
